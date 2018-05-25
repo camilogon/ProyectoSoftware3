@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+{% block tabla%}
+  {% if messages %}
+        <div class="alert alert-success">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    {% endif %}
+    <a href="{% url 'CrearMateria' %}" class="btn btn-success">Agregar</a>
+    <table id="datatable" class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+
+          </tr>
+        </thead>
+        {% for Materia in Materias %}
+          <tr>  
+
+            <th>{{ Materia.Nombre}}</th>
+            <th>{{ Materia.Descripcion }}</th>
+            <th>
+              <a href="{% url 'EditarMateria' Materia.id %}" class="btn btn-success">Update</a>
+              <a href="{% url 'EliminarMateria' Materia.id %}" class="btn btn-danger">Remove</a>
+            </th> 
+          </tr>
+        {% endfor %}
+       </table>
+{% endblock %}

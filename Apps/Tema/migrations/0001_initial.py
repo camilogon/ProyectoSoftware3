@@ -9,19 +9,17 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('Estudiante', '0001_initial'),
+        ('Materia', '0001_initial'),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Curso',
+            name='Tema',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('Codigo', models.IntegerField(primary_key=True, serialize=False)),
                 ('Nombre', models.CharField(max_length=50)),
                 ('Descripcion', models.CharField(max_length=50)),
-                ('Codigo', models.CharField(max_length=50)),
-                ('CantidadEstudiantes', models.IntegerField()),
-                ('CodigoEstudiante', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Estudiante.Estudiante')),
+                ('idMateria', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Materia.Materia')),
             ],
         ),
     ]

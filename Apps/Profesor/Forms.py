@@ -4,19 +4,17 @@ from Apps.Profesor.models import Profesor
 class ProfesorForm(forms.ModelForm):
 	class Meta:
 		model= Profesor
-		fields= ['Nombre','Apellido','Direccion','Correo','Curso','Contrasena','Telefono',]
-		labels={'Nombre':'nombre Profesor',
+		fields= ['Cedula','Nombre','Apellido','Ciudad','Correo','Telefono',]
+		labels={'Cedula':'Cedula del Profesor',
+				'Nombre': 'Nombre del Profesor',
 		        'Apellido':'apellido Profesor',
-		        'Direccion':'direccion',
+		        'Ciudad':'Ciudad',
 				'Correo':'Correo',
-				'Curso':'Curso',
-				'Contrasena':'Contrasena',
 				'Telefono':'Telefono',}
 
-		widgates={'Nombre':forms.TextInput(attrs={'class' : 'myfieldclass'}),
+		widgates={'Cedula':forms.TextInput(attrs={'class' : 'myfieldclass'}),
+		          'Nombre':forms.TextInput(attrs={'class' : 'myfieldclass'}),
 		          'Apellido':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-		          'Direccion':forms.TextInput(attrs={'class' : 'myfieldclass'}),
+				  'Ciudad': forms.TextInput(attrs={'class': 'myfieldclass'}),
 				  'Correo':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-				  'Curso':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-				  'Contrasena':forms.TextInput(attrs={'class' : 'myfieldclass'}),
 				  'Telefono':forms.TextInput(attrs={'class' : 'myfieldclass'}),}

@@ -21,5 +21,7 @@ urlpatterns = [
 	path('Acudiente/',include('Apps.Acudiente.urls')),
 	path('Profesor/',include('Apps.Profesor.urls')),
 	path('Curso/',include('Apps.Curso.urls')),
+	path('Materia/',include('Apps.Materia.urls')),
+	path('Tema/',include('Apps.Tema.urls')),
     path('admin/', admin.site.urls),
 ]

@@ -25,7 +25,7 @@ def CrearEstudiante(request):
 
 
 def EditarEstudiante(request, id):
-    instance = get_object_or_404(Estudiante, id=id)
+    instance = get_object_or_404(Estudiante, CodigoEstudiante=id)
     form = EstudianteForm(request.POST or None, instance=instance)
     if request.method == 'POST':
         if form.is_valid():
@@ -37,7 +37,7 @@ def EditarEstudiante(request, id):
 
 
 def EliminarEstudiante(request, id):
-    instance = get_object_or_404(Estudiante, id=id)
+    instance = get_object_or_404(Estudiante, CodigoEstudiante=id)
     instance.delete()
     messages.add_message(request, messages.SUCCESS, "El estudiante con id %s ha sido Eliminado!" % id)
     return HttpResponseRedirect("/Estudiante/ListarEstudiante")

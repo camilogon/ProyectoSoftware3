@@ -11,15 +11,20 @@
     <table id="datatable" class="table table-striped table-bordered">
         <thead>
           <tr>
-            <th>nombre</th>
-            <th>codigo</th>
+              <th>Nombre</th>
+              <th>Descripcion</th>
+              <th>Codigo</th>
+              <th>Candtidad Estudiantens</th>
           </tr>
         </thead>
         {% for Curso in Cursos %}
           <tr>  
             
-            <th>{{ Curso.nombre }}</th>
-            <th>{{ Curso.codigo }}</th>
+            <th>{{ Curso.Nombre }}</th>
+            <th>{{ Curso.Descripcion }}</th>
+            <th>{{ Curso.Codigo }}</th>
+            <th>{{ Curso.CantidadEstudiantes }}</th>
+
             <th>
               <a href="{% url 'EditarCurso' Curso.id %}" class="btn btn-success">Update</a>
               <a href="{% url 'EliminarCurso' Curso.id %}" class="btn btn-danger">Remove</a>

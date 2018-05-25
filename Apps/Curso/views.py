@@ -5,7 +5,7 @@ from Apps.Curso.models import Curso
 
 # Create your views here.
 def Inicio(request):
-    return render_to_response("Cursos/Inicio.html", {"Cursos": Curso.objects.all(), "messages": messages.get_messages(request)})
+    return render_to_response("Cursos/ListarCurso.html", {"Cursos": Curso.objects.all(), "messages": messages.get_messages(request)})
 
 def ListarCurso(request):
     return render_to_response("Cursos/ListarCurso.html", {"Cursos": Curso.objects.all(), "messages": messages.get_messages(request)})

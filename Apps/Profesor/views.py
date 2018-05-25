@@ -19,13 +19,10 @@ def CrearProfesor(request):
             messages.add_message(request, messages.SUCCESS, "Ha guardado un nuevo profesor!")
             return HttpResponseRedirect("/Profesor/ListarProfesor")
     return render(request, 'Profesores/CrearProfesor.html', {'form': form})
-    
-
-
 
 
 def EditarProfesor(request, id):
-    instance = get_object_or_404(Profesor, id=id)
+    instance = get_object_or_404(Profesor, Cedula=id)
     form = ProfesorForm(request.POST or None, instance=instance)
     if request.method == 'POST':
         if form.is_valid():
@@ -37,7 +34,7 @@ def EditarProfesor(request, id):
 
 
 def EliminarProfesor(request, id):
-    instance = get_object_or_404(Profesor, id=id)
+    instance = get_object_or_404(Profesor, Cedula=id)
     instance.delete()
     messages.add_message(request, messages.SUCCESS, "El profesor con id %s ha sido Eliminado!" % id)
     return HttpResponseRedirect("/Profesor/ListarProfesor")
