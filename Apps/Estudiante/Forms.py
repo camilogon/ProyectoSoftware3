@@ -12,8 +12,8 @@ class EstudianteForm ( forms.ModelForm ):
                   'FechaNacimiento': 'FechaNacimiento' ,
                   }
 
-        widgate = {'CodigoEsutidante': forms.TextInput(attrs={'class': 'form-control'}) ,
-                    'Nombre': forms.TextInput(attrs={'class': 'form-control'}) ,
-                    'Apellido': forms.TextInput(attrs={'class': 'form-control'}) ,
-                    'FechaNacimiento': forms.TextInput(attrs={'class': 'form-control'}) ,
+        widgtes = {'CodigoEsutidante': forms.TextInput(attrs={'class': 'form-control'}) ,
+                    'Nombre': forms.TextInput(attrs={'class': 'form-group'}) ,
+                    'Apellido': forms.TextInput(attrs={'class': 'form-group'}) ,
+                    'FechaNacimiento': forms.TextInput(attrs={'class': 'form-group'}) ,
                     }
