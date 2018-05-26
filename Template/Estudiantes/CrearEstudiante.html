@@ -1,13 +1,8 @@
 {% extends 'index.html' %}     
 {% block tabla%}
   <form method="post">
-     {%csrf_token%}
-     {{form.as_p}}
+     {% csrf_token %}
+     {{ form.as_p }}
      <button>enviar</button>
    </form>
-    <script type="text/javascript">
-      $('.datetimepicker').datetimepicker({
-        dateFormat: 'yy-mm-dd'
-      });
-    </script>
 {% endblock %}
