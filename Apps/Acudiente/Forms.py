@@ -13,10 +13,10 @@ class AcudienteForm(forms.ModelForm):
 				'cantidadHijos':'numero de hijos',
 				'correo':'correo'}
 
-		widgates={'cedula':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-					'nombre':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-					'apellido':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-					'direccion':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-					'celular':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-					'cantidadHijos':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-					'correo':forms.TextInput(attrs={'class' : 'myfieldclass'}),}
+		widgets={'cedula':forms.TextInput(attrs={'class' : 'form-control'}),
+					'nombre':forms.TextInput(attrs={'class' : 'form-control'}),
+					'apellido':forms.TextInput(attrs={'class' : 'form-control'}),
+					'direccion':forms.TextInput(attrs={'class' : 'form-control'}),
+					'celular':forms.TextInput(attrs={'class' : 'form-control'}),
+					'cantidadHijos':forms.TextInput(attrs={'class' : 'form-control'}),
+					'correo':forms.TextInput(attrs={'class' : 'form-control'}),}

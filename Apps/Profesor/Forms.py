@@ -12,9 +12,9 @@ class ProfesorForm(forms.ModelForm):
 				'Correo':'Correo',
 				'Telefono':'Telefono',}
 
-		widgates={'Cedula':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-		          'Nombre':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-		          'Apellido':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-				  'Ciudad': forms.TextInput(attrs={'class': 'myfieldclass'}),
-				  'Correo':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-				  'Telefono':forms.TextInput(attrs={'class' : 'myfieldclass'}),}
+		widgets={'Cedula':forms.TextInput(attrs={'class' : 'form-control'}),
+		          'Nombre':forms.TextInput(attrs={'class' : 'form-control'}),
+		          'Apellido':forms.TextInput(attrs={'class' : 'form-control'}),
+				  'Ciudad': forms.TextInput(attrs={'class': 'form-control'}),
+				  'Correo':forms.TextInput(attrs={'class' : 'form-control'}),
+				  'Telefono':forms.TextInput(attrs={'class' : 'form-control'}),}

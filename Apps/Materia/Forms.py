@@ -11,6 +11,6 @@ class MateriaForm ( forms.ModelForm ):
             'Descripcion': 'Descripcion' ,
         }
 
-        widgates = {'Nombre': forms.TextInput ( attrs={'class': 'myfieldclass'} ) ,
-                    'Descripcion': forms.TextInput ( attrs={'class': 'myfieldclass'} ) ,
+        widgets = {'Nombre': forms.TextInput ( attrs={'class': 'form-control'} ) ,
+                    'Descripcion': forms.TextInput ( attrs={'class': 'form-control'} ) ,
                     }

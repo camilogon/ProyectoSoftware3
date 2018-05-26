@@ -12,8 +12,8 @@ class TemaForm ( forms.ModelForm ):
                   'idMateria': 'Escoja la materia' ,
                   }
 
-        widgets = {'Codigo': forms.TextInput(attrs={'class': 'form-group'}) ,
-                    'Nombre': forms.TextInput(attrs={'class': 'form-group'}) ,
-                    'Descripcion': forms.TextInput(attrs={'class': 'form-group'}) ,
-                    'idMateria': forms.TextInput(attrs={'class': 'form-group'}) ,
+        widgets = {'Codigo': forms.TextInput(attrs={'class': 'form-control'}) ,
+                    'Nombre': forms.TextInput(attrs={'class': 'form-control'}) ,
+                    'Descripcion': forms.TextInput(attrs={'class': 'form-control'}) ,
+                    'idMateria': forms.TextInput(attrs={'class': 'form-control'}) ,
                     }

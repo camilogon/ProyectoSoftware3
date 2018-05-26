@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="3906de22-0405-4420-996c-da7bf2688fe1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/Acudiente/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Acudiente/Forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/Curso/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Curso/Forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/Estudiante/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Estudiante/Forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/Materia/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Materia/Forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/Profesor/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Profesor/Forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/Tema/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Tema/Forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template/Estudiantes/CrearEstudiante.html" beforeDir="false" afterPath="$PROJECT_DIR$/Template/Estudiantes/CrearEstudiante.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Template/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,41 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Forms.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Forms.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Apps/Estudiante/Forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/Tema/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/Tema/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Forms.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Apps/Tema/Forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="289">
+              <caret line="17" column="52" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="52" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -58,17 +36,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProyectoSoftware3/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/Tema/urls.py">
+        <entry file="file://$PROJECT_DIR$/Apps/Estudiante/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -76,11 +45,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apps/Profesor/urls.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/Estudiante/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListarEstudiante.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Template/Estudiantes/ListarEstudiante.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CrearEstudiante.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Template/Estudiantes/CrearEstudiante.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/Estudiante/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -88,8 +84,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Template/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
+            <state relative-caret-position="214">
+              <caret line="337" column="4" selection-start-line="337" selection-start-column="4" selection-end-line="337" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -109,6 +105,7 @@
       <find>listar</find>
       <find>Profesor</find>
       <find>Estudiante</find>
+      <find>jq</find>
     </findStrings>
     <replaceStrings>
       <replace>Tema</replace>
@@ -125,20 +122,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Apps/Estudiante/migrations/urls.py" />
-        <option value="$PROJECT_DIR$/Apps/Profesor/Forms.py" />
-        <option value="$PROJECT_DIR$/Apps/Curso/Forms.py" />
         <option value="$PROJECT_DIR$/Template/Profesores/ListarProfesor.html" />
         <option value="$PROJECT_DIR$/Apps/Curso/views.py" />
         <option value="$PROJECT_DIR$/Template/Cursos/ListarCurso.html" />
-        <option value="$PROJECT_DIR$/Apps/Estudiante/urls.py" />
         <option value="$PROJECT_DIR$/Apps/Estudiante/views.py" />
         <option value="$PROJECT_DIR$/Template/Estudiantes/ListarEstudiante.html" />
         <option value="$PROJECT_DIR$/Apps/Profesor/models.py" />
         <option value="$PROJECT_DIR$/Apps/Curso/urls.py" />
         <option value="$PROJECT_DIR$/Apps/Profesor/views.py" />
-        <option value="$PROJECT_DIR$/Apps/Estudiante/models.py" />
         <option value="$PROJECT_DIR$/Template/Materias/CrearMateria.html" />
-        <option value="$PROJECT_DIR$/Apps/Materia/Forms.py" />
         <option value="$PROJECT_DIR$/Apps/Materia/models.py" />
         <option value="$PROJECT_DIR$/Apps/Materia/views.py" />
         <option value="$PROJECT_DIR$/Template/Materias/ListarMateria.html" />
@@ -147,13 +139,20 @@
         <option value="$PROJECT_DIR$/ProyectoSoftware3/urls.py" />
         <option value="$PROJECT_DIR$/Template/Temas/ListarTema.html" />
         <option value="$PROJECT_DIR$/Apps/Curso/models.py" />
-        <option value="$PROJECT_DIR$/Template/index.html" />
-        <option value="$PROJECT_DIR$/Apps/Estudiante/Forms.py" />
         <option value="$PROJECT_DIR$/Apps/Tema/urls.py" />
         <option value="$PROJECT_DIR$/Apps/Profesor/urls.py" />
         <option value="$PROJECT_DIR$/Apps/Tema/models.py" />
         <option value="$PROJECT_DIR$/Apps/Tema/views.py" />
+        <option value="$PROJECT_DIR$/Apps/Acudiente/Forms.py" />
+        <option value="$PROJECT_DIR$/Apps/Curso/Forms.py" />
+        <option value="$PROJECT_DIR$/Apps/Materia/Forms.py" />
+        <option value="$PROJECT_DIR$/Apps/Profesor/Forms.py" />
         <option value="$PROJECT_DIR$/Apps/Tema/Forms.py" />
+        <option value="$PROJECT_DIR$/Template/Estudiantes/CrearEstudiante.html" />
+        <option value="$PROJECT_DIR$/Template/index.html" />
+        <option value="$PROJECT_DIR$/Apps/Estudiante/urls.py" />
+        <option value="$PROJECT_DIR$/Apps/Estudiante/models.py" />
+        <option value="$PROJECT_DIR$/Apps/Estudiante/Forms.py" />
       </list>
     </option>
   </component>
@@ -192,7 +191,7 @@
       <path value="$PROJECT_DIR$/static/vendors/transitionize/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="22" />
     <option name="width" value="1346" />
@@ -220,12 +219,19 @@
             <path>
               <item name="ProyectoSoftware3" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoSoftware3" type="462c0819:PsiDirectoryNode" />
-              <item name="ProyectoSoftware3" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
+              <item name="Estudiante" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProyectoSoftware3" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoSoftware3" type="462c0819:PsiDirectoryNode" />
               <item name="Template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoSoftware3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoSoftware3" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Estudiantes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -323,18 +329,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5219619" side_tool="true" visible="true" weight="0.2992126" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4978038" weight="0.2976378" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47803807" visible="true" weight="0.2992126" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.52342606" side_tool="true" visible="true" weight="0.2992126" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4978038" weight="0.2976378" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47657394" visible="true" weight="0.2992126" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23718888" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -343,35 +348,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="manage.py@ProyectoSoftware3" order="7" sideWeight="0.6544656" weight="0.32913387" />
+      <window_info anchor="bottom" id="manage.py@ProyectoSoftware3" order="12" sideWeight="0.6544656" weight="0.32913387" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47877014" visible="true" weight="0.2992126" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24304539" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="manage.py@ProyectoSoftware3" order="11" sideWeight="0.6544656" weight="0.32913387" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.52122986" side_tool="true" visible="true" weight="0.2992126" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4978038" weight="0.2976378" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -416,6 +397,23 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Template/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Tema/Forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Apps/Estudiante/Forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -427,13 +425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Estudiante/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -500,34 +491,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Template/Cursos/CrearCurso.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Estudiante/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Estudiante/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Materia/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Template/Cursos/CrearCurso.html" />
+    <entry file="file://$PROJECT_DIR$/Apps/Materia/migrations/0001_initial.py" />
     <entry file="file://C:/Python/Lib/site-packages/django/apps/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -584,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Template/Estudiantes/ListarEstudiante.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="27" column="78" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Apps/Materia/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -615,44 +573,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Materia/Forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="77" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Profesor/Forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Template/Materias/CrearMateria.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Template/Materias/EditarMateria.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Template/Materias/ListarMateria.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Template/Materias/CrearMateria.html" />
+    <entry file="file://$PROJECT_DIR$/Template/Materias/EditarMateria.html" />
+    <entry file="file://$PROJECT_DIR$/Template/Materias/ListarMateria.html" />
     <entry file="file://C:/Python/Lib/site-packages/django/db/models/fields/related.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -660,13 +583,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Template/Temas/ListarTema.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Template/Temas/ListarTema.html" />
     <entry file="file://$PROJECT_DIR$/ProyectoSoftware3/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -674,44 +591,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Curso/models.py">
+    <entry file="file://$PROJECT_DIR$/Apps/Curso/models.py" />
+    <entry file="file://$PROJECT_DIR$/Apps/Profesor/views.py" />
+    <entry file="file://$PROJECT_DIR$/Apps/Profesor/urls.py" />
+    <entry file="file://$PROJECT_DIR$/Apps/Tema/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Curso/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Template/index.html">
+    <entry file="file://$PROJECT_DIR$/Apps/Acudiente/Forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Profesor/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="58" lean-forward="true" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        <state relative-caret-position="357">
+          <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
           <folding>
-            <element signature="e#0#96#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Profesor/urls.py">
+    <entry file="file://$PROJECT_DIR$/Apps/Curso/Forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="272">
+          <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Estudiante/Forms.py">
+    <entry file="file://$PROJECT_DIR$/Apps/Profesor/Forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="75" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Materia/Forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProyectoSoftware3/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Tema/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="20" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Tema/Forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -725,31 +669,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProyectoSoftware3/settings.py">
+    <entry file="file://$PROJECT_DIR$/Template/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        <state relative-caret-position="214">
+          <caret line="337" column="4" selection-start-line="337" selection-start-column="4" selection-end-line="337" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Tema/urls.py">
+    <entry file="file://$PROJECT_DIR$/Apps/Estudiante/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Tema/views.py">
+    <entry file="file://$PROJECT_DIR$/Apps/Estudiante/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apps/Tema/Forms.py">
+    <entry file="file://$PROJECT_DIR$/Template/Estudiantes/ListarEstudiante.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Template/Estudiantes/CrearEstudiante.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Estudiante/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Estudiante/Forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="52" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>

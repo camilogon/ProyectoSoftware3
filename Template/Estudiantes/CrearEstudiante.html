@@ -4,5 +4,10 @@
      {%csrf_token%}
      {{form.as_p}}
      <button>enviar</button>
-   </form>  
+   </form>
+    <script type="text/javascript">
+      $('.datetimepicker').datetimepicker({
+        dateFormat: 'yy-mm-dd'
+      });
+    </script>
 {% endblock %}

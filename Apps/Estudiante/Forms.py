@@ -9,11 +9,11 @@ class EstudianteForm ( forms.ModelForm ):
         labels = {'CodigoEstudiante': 'Codigo del estudiante' ,
                   'Nombre': 'Nombre' ,
                   'Curso': 'Apellido' ,
-                  'FechaNacimiento': 'FechaNacimiento' ,
+                  'FechaNacimieto': 'FechaNacimiento' ,
                   }
 
-        widgtes = {'CodigoEsutidante': forms.TextInput(attrs={'class': 'form-control'}) ,
-                    'Nombre': forms.TextInput(attrs={'class': 'form-group'}) ,
-                    'Apellido': forms.TextInput(attrs={'class': 'form-group'}) ,
-                    'FechaNacimiento': forms.TextInput(attrs={'class': 'form-group'}) ,
-                    }
+        widgets = {'CodigoEstudiante': forms.TextInput(attrs={'class': 'form-control'}) ,
+                   'Nombre': forms.TextInput(attrs={'class': 'form-control'}) ,
+                   'Apellido': forms.TextInput(attrs={'class': 'form-control'}) ,
+                   'FechaNacimieto': forms.DateInput(attrs={'class': 'form-control'}),
+                   }

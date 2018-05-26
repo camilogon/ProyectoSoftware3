@@ -11,8 +11,8 @@ class CursoForm(forms.ModelForm):
 				'CantidadEstudiantes':'Cantidad de estudiantes'
 				}
 
-		widgates={'Nombre':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-				  'Descripcion':forms.TextInput(attrs={'class' : 'myfieldclass'}),
-				  'Codigo': forms.TextInput(attrs={'class': 'myfieldclass'}),
-				  'CantidadEstudiante': forms.TextInput(attrs={'class': 'myfieldclass'}),
+		widgets={'Nombre':forms.TextInput(attrs={'class' : 'form-control'}),
+				  'Descripcion':forms.TextInput(attrs={'class' : 'form-control'}),
+				  'Codigo': forms.TextInput(attrs={'class': 'form-control'}),
+				  'CantidadEstudiante': forms.TextInput(attrs={'class': 'form-control'}),
 				  }
