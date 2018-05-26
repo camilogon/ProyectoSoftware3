@@ -1,0 +1,8 @@
+{% extends 'index.html' %}     
+{% block tabla%}
+  <form method="post">
+     {%csrf_token%}
+     {{form.as_p}}
+     <button>enviar</button>
+   </form>  
+{% endblock %}
