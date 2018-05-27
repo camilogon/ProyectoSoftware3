@@ -22,6 +22,6 @@ class EstudianteForm ( ModelForm ):
         widgets = {'CodigoEstudiante': forms.TextInput ( attrs={'class': 'form-control'} ) ,
                    'Nombre': forms.TextInput ( attrs={'class': 'form-control'} ) ,
                    'Apellido': forms.TextInput ( attrs={'class': 'form-control'} ) ,
-                   'Curso': forms.Select(choices=[ (o.Nombre, str(o)) for o in Curso.objects.all()], attrs={'class': 'form-control'} ) ,
+                   'Curso': forms.Select(attrs={'class': 'form-control'} ) ,
                    'FechaNacimieto': forms.DateInput(attrs={'type':'date', 'class': 'form-control'} ) ,
                    }

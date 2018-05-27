@@ -13,7 +13,7 @@ class AsignarForm ( forms.ModelForm ):
                   'idCurso': 'apellido' ,
                   }
 
-        widgets = {'cedula': forms.Select (choices=[ (o.Nombre, str(o)) for o in Profesor.objects.all()],attrs={'class': 'form-control'} ) ,
-                   'idMateria': forms.Select (choices=[ (o.Nombre, str(o)) for o in Materia.objects.all()],attrs={'class': 'form-control'} ) ,
-                   'idCurso': forms.Select (choices=[ (o.Nombre, str(o)) for o in Curso.objects.all()], attrs={'class': 'form-control'} ) ,
+        widgets = {'cedula': forms.Select (attrs={'class': 'form-control'} ) ,
+                   'idMateria': forms.Select (attrs={'class': 'form-control'} ) ,
+                   'idCurso': forms.Select (attrs={'class': 'form-control'} ) ,
                    }

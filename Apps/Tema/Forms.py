@@ -15,5 +15,5 @@ class TemaForm ( forms.ModelForm ):
         widgets = {'Codigo': forms.TextInput(attrs={'class': 'form-control'}) ,
                     'Nombre': forms.TextInput(attrs={'class': 'form-control'}) ,
                     'Descripcion': forms.TextInput(attrs={'class': 'form-control'}) ,
-                    'idMateria': forms.TextInput(attrs={'class': 'form-control'}) ,
+                    'idMateria': forms.Select(attrs={'class': 'form-control'}) ,
                     }

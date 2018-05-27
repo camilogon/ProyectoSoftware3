@@ -11,7 +11,6 @@ def ListarAcudiente(request):
 
 def CrearAcudiente(request):
     form = AcudienteForm(request.POST or None)
-    
     if request.method == 'POST':
         if form.is_valid():
             form.save()

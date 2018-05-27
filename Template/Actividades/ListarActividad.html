@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+{% block tabla%}
+  {% if messages %}
+        <div class="alert alert-success">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+       
+    {% endif %}
+
+    <h2>Asignar Actividad</h2>
+
+    <div class="menu_section">
+       <a href="{% url 'CrearActividad' %}" class="btn btn-success">Asignar Nueva Actividad</a>
+    </div>
+    </div>
+    <table id="datatable" class="table table-striped table-bordered">
+        <thead>
+          <tr>
+
+            <th>Nombre</th>
+            <th>Estado_Actividad</th>
+            <th>fecha de entrega</th>
+            <th>archivo</th>
+            
+            
+          </tr>
+        </thead>
+        {% for Actividad in Actividades %}
+          <tr>
+            <th>{{ Actividad.Nombre }}</th>
+            <th>{{ Actividad.Estado_Actividad }}</th>
+            <th>{{ Actividad.Fecha_Entrega }}</th>
+            <th>{{ Actividad.docfile }}</th>
+          </tr>
+        {% endfor %}
+       </table>
+
+{% endblock %}

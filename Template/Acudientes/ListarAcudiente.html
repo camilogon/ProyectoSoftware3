@@ -1,4 +1,9 @@
-{% extends 'index.html' %}
+{% extends 'indexProfesor.html' %}
+{% block listado%}
+{% for Curso in Cursos %}
+   <li><a href="index.html">{{ Curso.Nombre }}</a></li>
+{% endfor %}
+{% endblock %}
 {% block tabla%}
   {% if messages %}
         <div class="alert alert-success">
@@ -18,7 +23,6 @@
             <th>celular</th>
             <th>cantidadHijos</th>
             <th>correo</th>
-            <th>Acciones</th>
           </tr>
         </thead>
         {% for Acudiente in Acudientes %}

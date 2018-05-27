@@ -2,8 +2,12 @@ from django.shortcuts import render, render_to_response, HttpResponseRedirect, g
 from django.contrib import messages
 from Apps.Asignar.Forms import AsignarForm
 from Apps.Asignar.models import Asignar
+from Apps.Curso.models import Curso
 
 # Create your views here.
+
+def ListarActi(request):
+    return render_to_response("Indexprofesor.html", {"Cursos": Curso.objects.all(), "messages": messages.get_messages(request)})
 
 def ListarAsignaciones(request):
     return render_to_response("Asignaciones/ListarAsignaciones.html", {"Asignaciones": Asignar.objects.all(), "messages": messages.get_messages(request)})
