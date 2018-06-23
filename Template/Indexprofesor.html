@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DataTables | Gentelella</title>
+    <title>Colegio La Esperanza</title>
 
     <!-- Bootstrap -->
     <link href="{% static 'vendors/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -37,7 +37,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Zona Profesor!</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -48,7 +48,7 @@
                 <img src="#" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
-                <span>Welcome,</span>
+                <span>Bienvenido Profesor,</span>
                 <h2>John Doe</h2>
               </div>
             </div>
@@ -61,8 +61,22 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                    {% block listado%}
-                    {% endblock %}
+
+                {% for curso in Cursos %}
+
+                 <li class="active-sm"  id="{{ curso.Nombre }}" ><a onclick="materias({{ curso.id }}, {{ curso.Nombre }})"><i class="fa fa-home"></i> {{ curso.Nombre }} <span class="fa fa-chevron-down"></span></a>
+                    <div>
+
+                         <ul class="nav side-menu" id="{{ curso.id }}" >
+
+                        </ul>
+
+
+                    </div>
+                 </li>
+
+                {% endfor %}
+
                 </ul>
               </div>
 
@@ -179,7 +193,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>CRUD ESTUDIANTE</h2>
+                  <!--  <h2>Panel</h2> -->
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -215,35 +229,48 @@
         <!-- /footer content -->
       </div>
     </div>
-
+      </div>
+       </div>
 
     <!-- jQuery -->
-    <script src="{% static 'vendors/jquery/dist/jquery.min.js' %}"></script>
-    <!-- Bootstrap -->
-    <script src="{% static 'vendors/bootstrap/dist/js/bootstrap.min.js' %}"></script>
-    <!-- FastClick -->
-    <script src="{% static 'vendors/fastclick/lib/fastclick.js' %}"></script>
-    <!-- NProgress -->
-    <script src="{% static 'vendors/nprogress/nprogress.js' %}"></script>
-    <!-- iCheck -->
-    <script src="{% static 'vendors/iCheck/icheck.min.js' %}"></script>
-    <!-- Datatables -->
-    <script src="{% static 'vendors/datatables.net/js/jquery.dataTables.min.js' %}"></script>
-    <script src="{% static 'vendors/datatables.net-bs/js/dataTables.bootstrap.min.js' %}"></script>
-    <script src="{% static 'vendors/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
-    <script src="{% static 'vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js' %}"></script>
-    <script src="{% static 'vendors/datatables.net-buttons/js/buttons.flash.min.js' %}"></script>
-    <script src="{% static 'vendors/datatables.net-buttons/js/buttons.html5.min.js' %}"></script>
-    <script src="{% static '/vendors/datatables.net-buttons/js/buttons.print.min.js' %}"></script>
-    <script src="{% static 'vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js' %}"></script>
-    <script src="{% static 'vendors/datatables.net-keytable/js/dataTables.keyTable.min.js' %}"></script>
-    <script src="{% static 'vendors/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
-    <script src="{% static 'vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js' %}"></script>
-    <script src="{% static 'vendors/datatables.net-scroller/js/dataTables.scroller.min.js' %}"></script>
-    <script src="{% static 'vendors/jszip/dist/jszip.min.js' %}"></script>
-    <script src="{% static 'vendors/pdfmake/build/pdfmake.min.js' %}"></script>
-    <script src="{% static 'vendors/pdfmake/build/vfs_fonts.js' %}"></script>
-
-
+   <script src="{% static 'vendors/jquery/dist/jquery.min.js' %}"></script>
+        <!-- Bootstrap -->
+        <script src="{% static 'vendors/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+        <!-- FastClick -->
+        <script src="{% static 'vendors/fastclick/lib/fastclick.js' %}"></script>
+        <!-- NProgress -->
+        <script src="{% static 'vendors/nprogress/nprogress.js' %}"></script>
+        <!-- Chart.js -->
+        <script src="{% static 'vendors/Chart.js/dist/Chart.min.js' %}"></script>
+        <!-- gauge.js -->
+        <script src="{% static 'vendors/gauge.js/dist/gauge.min.js' %}"></script>
+        <!-- bootstrap-progressbar -->
+        <script src="{% static 'vendors/bootstrap-progressbar/bootstrap-progressbar.min.js' %}"></script>
+        <!-- iCheck -->
+        <script src="{% static 'vendors/iCheck/icheck.min.js' %}"></script>
+        <!-- Skycons -->
+        <script src="{% static 'vendors/skycons/skycons.js' %}"></script>
+        <!-- Flot -->
+        <script src="{% static 'vendors/Flot/jquery.flot.js' %}"></script>
+        <script src="{% static 'vendors/Flot/jquery.flot.pie.js' %}"></script>
+        <script src="{% static 'vendors/Flot/jquery.flot.time.js' %}"></script>
+        <script src="{% static 'vendors/Flot/jquery.flot.stack.js' %}"></script>
+        <script src="{% static 'vendors/Flot/jquery.flot.resize.js' %}"></script>
+        <!-- Flot plugins -->
+        <script src="{% static 'vendors/flot.orderbars/js/jquery.flot.orderBars.js' %}"></script>
+        <script src="{% static 'vendors/flot-spline/js/jquery.flot.spline.min.js' %}"></script>
+        <script src="{% static 'vendors/flot.curvedlines/curvedLines.js' %}"></script>
+        <!-- DateJS -->
+        <script src="{% static 'vendors/DateJS/build/date.js' %}"></script>
+        <!-- JQVMap -->
+        <script src="{% static 'vendors/jqvmap/dist/jquery.vmap.js' %}"></script>
+        <script src="{% static 'vendors/jqvmap/dist/maps/jquery.vmap.world.js' %}"></script>
+        <script src="{% static 'vendors/jqvmap/examples/js/jquery.vmap.sampledata.js' %}"></script>
+        <!-- bootstrap-daterangepicker -->
+        <script src="{% static 'vendors/moment/min/moment.min.js' %}"></script>
+        <script src="{% static 'vendors/bootstrap-daterangepicker/daterangepicker.js' %}"></script>
+        <!-- Custom Theme Scripts -->
+        <script src="{% static 'build/js/custom.min.js' %}"></script>
+    <script src="{% static 'js/Datos.js' %}"></script>
   </body>
 </html>

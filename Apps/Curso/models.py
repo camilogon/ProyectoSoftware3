@@ -14,7 +14,7 @@ class Curso(models.Model):
     CantidadEstudiantes = models.IntegerField()
 
     def Listarcursos(idprofesor):
-        query = 'SELECT distinct c.* FROM asignar_asignar a inner join curso_curso c ON a.idCurso_id= c.id where a.cedula_id =' + idprofesor
+        query = 'SELECT distinct c.* FROM asignar_asignar a inner join curso_curso c ON a.idCurso_id= c.id where a.cedula_id =' + str(idprofesor)
         cursos = Curso.objects.raw(query)
         return cursos
 
