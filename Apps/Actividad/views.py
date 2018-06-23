@@ -35,20 +35,19 @@ def ListarMateria(request):
     return JsonResponse(str(resp),safe=False)
 
 
-def ListarActividad(request):
-    ##Curso.listarCursos(2751232)
-    return render_to_response("Actividades/ListarActividad.html", {"Actividades": Actividad.objects.all(), "messages": messages.get_messages(request)})
+def ListarActividad(request,idMateria):
+    #{"Actividades": Actividad.objects.all () , "Materia": datos , "messages": messages.get_messages ( request )}
+    return render_to_response("Actividades/ListarActividad.html",{"Actividades": Actividad.objects.all () , "Materia": idMateria ,"Cursos": Curso.Listarcursos(2751234), "messages": messages.get_messages ( request )})
 
 
 
-def CrearActividad(request):
+def CrearActividad(request,idMateria):
     form = ActividadForm ( request.POST or None)
     if request.method == 'POST':
         if form.is_valid():
             form.save()
             messages.add_message(request, messages.SUCCESS, "guardada actividad")
             return HttpResponseRedirect("/Actividad/ListarActividad")
-
     return render(request, 'Actividades/CrearActividad.html', {'form': form})
 
 

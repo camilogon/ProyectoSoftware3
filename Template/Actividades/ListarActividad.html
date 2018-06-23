@@ -1,4 +1,4 @@
-{% extends 'indexprofesor.html' %}
+{% extends 'Indexprofesor.html' %}
 {% block tabla%}
   {% if messages %}
         <div class="alert alert-success">
@@ -12,7 +12,7 @@
     <h2>Asignar Actividad</h2>
 
     <div class="menu_section">
-       <a href="{% url 'CrearActividad' %}" class="btn btn-success">Asignar Nueva Actividad</a>
+       <a href="{% url 'CrearActividad' Materia %}" class="btn btn-success">Asignar Nueva Actividad</a>
     </div>
     </div>
     <table id="datatable" class="table table-striped table-bordered">

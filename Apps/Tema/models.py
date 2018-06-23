@@ -11,6 +11,5 @@ class Tema(models.Model):
 
 
     def listarTema(idmateria):
-
         Materias = Materia.objects.all().filter(idmateria)
         return Materias
