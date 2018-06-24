@@ -3,25 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3906de22-0405-4420-996c-da7bf2688fe1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Actividad/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Actividad/Forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Actividad/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Actividad/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Actividad/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Actividad/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Actividad/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Actividad/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Acudiente/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Acudiente/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Asignar/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Asignar/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Curso/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Curso/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Estudiante/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Estudiante/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Estudiante/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Estudiante/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Materia/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Materia/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Profesor/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Profesor/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Tema/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Tema/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Tema/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Tema/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoSoftware3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoSoftware3/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoSoftware3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoSoftware3/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/Actividades/ListarActividad.html" beforeDir="false" afterPath="$PROJECT_DIR$/Template/Actividades/ListarActividad.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/Indexprofesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/Template/Indexprofesor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Template/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/Datos.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/Datos.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,8 +28,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Apps/Actividad/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="17" />
+            <state relative-caret-position="17">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -363,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529785604746</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="se agrego una nueva consulta">
+      <created>1529817531402</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1529817531402</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -768,8 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Apps/Actividad/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="17" />
+        <state relative-caret-position="17">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>

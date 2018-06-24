@@ -1,0 +1,38 @@
+{% extends 'index.html' %}
+{% block tabla%}
+  {% if messages %}
+        <div class="alert alert-success">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+       
+    {% endif %}
+
+    <h2>Listar Preguntas</h2>
+
+    <div class="menu_section">
+       <a href="{% url 'CrearCuestionario' %}" class="btn btn-success">Crear Reto</a>
+    </div>
+    </div>
+    <table id="datatable" class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Enunciado</th>
+            <th>Respuesta</th>
+          </tr>
+        </thead>
+        {% for Cuestionario in Cuestionarios %}
+          <tr>
+            <th>{{ Cuestionario.Enunciado }}</th>
+            {% if Cuestionario.Respuesta %}
+                <th>SI</th>
+            {% endif %}
+            {% if not Cuestionario.Respuesta  %}
+                <th>NO</th>
+            {% endif %}
+          </tr>
+        {% endfor %}
+       </table>
+
+{% endblock %}
