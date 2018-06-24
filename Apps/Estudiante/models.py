@@ -12,3 +12,4 @@ class Estudiante(models.Model):
     def listarEstudiantesCurso(idcurso):
         Estudiantes = Estudiante.objects.all ().filter ( idcurso )
         return Estudiantes
+

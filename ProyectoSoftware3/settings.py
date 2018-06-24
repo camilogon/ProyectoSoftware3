@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'Apps.Materia',
     'Apps.Tema',
     'Apps.Asignar',
-    'Apps.Actividad'
+    'Apps.Actividad',
+    'Apps.Cuestionario'
 ]
 
 MIDDLEWARE = [

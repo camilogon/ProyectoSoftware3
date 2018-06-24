@@ -25,5 +25,6 @@ urlpatterns = [
 	path('Tema/',include('Apps.Tema.urls')),
 	path('Asignar/',include('Apps.Asignar.urls')),
 	path('Actividad/',include('Apps.Actividad.urls')),
+	path('Cuestionario/',include('Apps.Cuestionario.urls')),
     path('admin/', admin.site.urls),
 ]

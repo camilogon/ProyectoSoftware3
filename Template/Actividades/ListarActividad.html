@@ -20,9 +20,9 @@
           <tr>
 
             <th>Nombre</th>
-            <th>Estado_Actividad</th>
+
             <th>fecha de entrega</th>
-            <th>archivo</th>
+            <th>Estado_Actividad</th>
             
             
           </tr>
@@ -30,9 +30,8 @@
         {% for Actividad in Actividades %}
           <tr>
             <th>{{ Actividad.Nombre }}</th>
-            <th>{{ Actividad.Estado_Actividad }}</th>
             <th>{{ Actividad.Fecha_Entrega }}</th>
-            <th>{{ Actividad.docfile }}</th>
+            <th>Pendiente</th>
           </tr>
         {% endfor %}
        </table>

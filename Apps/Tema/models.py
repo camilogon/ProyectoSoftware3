@@ -9,6 +9,8 @@ class Tema(models.Model):
     Descripcion = models.CharField(max_length=100)
     idMateria = models.ForeignKey(Materia, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return '{}'.format(self.Nombre)
 
     def listarTema(idmateria):
         Materias = Materia.objects.all().filter(idmateria)

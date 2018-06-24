@@ -8,7 +8,7 @@ function materias(idcurso, nombrecurso){
            // $("#lista-materias").append(nombrecurso);
        for(var i=0;i<materia.length;i++){
            //var url1 = '{% url ListarActividad  "'+materia[i]['pk']+'" %}';
-           var template = "<li class=\"fa fa-bar-chart-o\"><a href='http://localhost:8000/Actividad/ListarActividad/"+materia[i]['pk']+"'> "+materia[i]['fields']['Nombre']+"</li>";
+           var template = "<li><a href='http://localhost:8000/Actividad/ListarActividad/"+materia[i]['pk']+"'> "+materia[i]['fields']['Nombre']+"</li>";
            if(! $(x).empty()){
               $(x).removeChild(template);
            }
@@ -18,7 +18,6 @@ function materias(idcurso, nombrecurso){
        }
     });
 }
-
 /*
 $(function () {
     /*$.post("/Actividad/ListarMateria",{"hola":"navas"},function (response) {

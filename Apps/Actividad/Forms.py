@@ -10,13 +10,13 @@ class DateInput(forms.DateInput):
 class ActividadForm(forms.ModelForm):
     class Meta:
         model = Actividad
-        fields = ['Nombre', 'Descripcion', 'idTema', 'docfile', 'Fecha_Entrega']
+        fields = ['Nombre', 'Descripcion', 'idTema', 'docfile', 'Fecha_Entrega','idCurso']
         labels = {
             'Nombre': 'Titulo Actividad:',
             'Descripcion': 'Descripción Actividad:',
             'idTema': 'Tema:',
             'docfile': 'Archivo:',
-            'Fecha_Entrega': 'Fecha Entrega:'
+            'Fecha_Entrega': 'Fecha Entrega:',
         }
 
         widgets = {
@@ -25,7 +25,7 @@ class ActividadForm(forms.ModelForm):
             'idTema': forms.Select(attrs={'class': 'form-control'}),
             'docfile': forms.FileInput(attrs={'class': 'form-control'}),
             'Fecha_Entrega': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
-
+            'idCurso':forms.HiddenInput(),
         }
 
 
