@@ -1,5 +1,7 @@
 from django import forms
 from Apps.Actividad.models import Actividad
+from Apps.Actividad.models import infoac
+from Apps.Tema.models import Tema
 from django.forms import ModelForm
 
 
@@ -10,7 +12,7 @@ class DateInput(forms.DateInput):
 class ActividadForm(forms.ModelForm):
     class Meta:
         model = Actividad
-        fields = ['Nombre', 'Descripcion', 'idTema', 'docfile', 'Fecha_Entrega','idCurso']
+        fields = ['Nombre', 'Descripcion', 'idTema', 'docfile', 'Fecha_Entrega']
         labels = {
             'Nombre': 'Titulo Actividad:',
             'Descripcion': 'Descripción Actividad:',
@@ -25,7 +27,6 @@ class ActividadForm(forms.ModelForm):
             'idTema': forms.Select(attrs={'class': 'form-control'}),
             'docfile': forms.FileInput(attrs={'class': 'form-control'}),
             'Fecha_Entrega': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
-            'idCurso':forms.HiddenInput(),
         }
 
 

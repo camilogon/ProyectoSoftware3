@@ -10,19 +10,15 @@ class DateInput(forms.DateInput):
 class CuestionarioForm(forms.ModelForm):
     class Meta:
         model = Cuestionario
-        fields = ['CodigoTema','idProfesor','idCurso','Enunciado', 'Respuesta']
+        fields = ['CodigoTema','Enunciado', 'Respuesta']
         labels = {
             'CodigoTema': 'Codigo Tema',
-            'idProfesor': 'ID profesor',
-            'idCurso': 'ID Curso',
             'Enunciado': 'Enunciado pregunta:',
             'Respuesta': 'Respuesta pregunta:'
         }
 
         widgets = {
             'CodigoTema': forms.Select(attrs={'class': 'form-control'}) ,
-            'idProfesor': forms.Select(attrs={'class': 'form-control'}) ,
-            'idCurso': forms.Select(attrs={'class': 'form-control'}) ,
             'Enunciado': forms.TextInput(attrs={'class': 'form-control'}),
             'Respuesta': forms.CheckboxInput(attrs={'class': 'form-control'}),
         }

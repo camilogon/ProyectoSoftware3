@@ -18,3 +18,7 @@ class Curso(models.Model):
         cursos = Curso.objects.raw(query)
         return cursos
 
+    def seleccionarCurso(idcurso):
+        query = 'SELECT * FROM curso_curso  where id =' + str (idcurso)
+        curso = Curso.objects.raw ( query )
+        return curso

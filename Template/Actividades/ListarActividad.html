@@ -31,7 +31,11 @@
           <tr>
             <th>{{ Actividad.Nombre }}</th>
             <th>{{ Actividad.Fecha_Entrega }}</th>
-            <th>Pendiente</th>
+            {% if Actividad.Fecha_Entrega|date:"Y-m-d" > hoy %}
+                <th>Pendiente</th>
+            {% else %}
+                <th>Finalizado</th>
+            {% endif %}
           </tr>
         {% endfor %}
        </table>

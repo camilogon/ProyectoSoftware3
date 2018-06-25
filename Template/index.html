@@ -64,7 +64,7 @@
 
                 {% for curso in Cursos %}
 
-                 <li class="active-sm"  id="{{ curso.Nombre }}" ><a onclick="materias({{ curso.id }}, {{ curso.Nombre }})"><i class="fa fa-home"></i> {{ curso.Nombre }} <span class="fa fa-chevron-down"></span></a>
+                 <li class="active-sm"  id="{{ curso.Nombre }}" ><a onclick="materiasCuestionario({{ curso.id }}, {{ curso.Nombre }})"><i class="fa fa-home"></i> {{ curso.Nombre }} <span class="fa fa-chevron-down"></span></a>
                     <div>
 
                          <ul class="nav side-menu" id="{{ curso.id }}" >
@@ -271,6 +271,6 @@
         <script src="{% static 'vendors/bootstrap-daterangepicker/daterangepicker.js' %}"></script>
         <!-- Custom Theme Scripts -->
         <script src="{% static 'build/js/custom.min.js' %}"></script>
-    <script src="{% static 'js/Datos.js' %}"></script>
+        <script src="{% static 'js/Datos.js' %}"></script>
   </body>
 </html>

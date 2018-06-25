@@ -13,5 +13,10 @@ class Tema(models.Model):
         return '{}'.format(self.Nombre)
 
     def listarTema(idmateria):
-        Materias = Materia.objects.all().filter(idmateria)
+        Materias = Materia.objects.all().filter(idMateria_id=idmateria)
         return Materias
+
+    def seleccionarTema(idMateria):
+        query = 'SELECT * FROM tema_tema where idMateria_id =' + str ( idMateria )
+        tema = Tema.objects.raw ( query )
+        return tema
