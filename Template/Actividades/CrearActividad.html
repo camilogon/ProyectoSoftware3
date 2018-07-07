@@ -1,6 +1,13 @@
 {% extends 'Indexprofesor.html' %}
 {% block tabla%}
   <form action="" method="post" enctype="multipart/form-data">
+      <h4>Codigo Tema:</h4>
+     {% for tema in Temas %}
+       <select class="form-control" id="CodigoTema" name="CodigoTema">
+         <option value="{{ tema.Codigo }}"  >{{ tema.Nombre }}</option>
+       </select>
+     {% endfor %}
+     <h4></h4>
      {% csrf_token %}
      {{ form.as_p }}
      <button>crear actividad</button>

@@ -17,6 +17,7 @@ class Tema(models.Model):
         return Materias
 
     def seleccionarTema(idMateria):
+        print("soy la materia "+str ( idMateria ))
         query = 'SELECT * FROM tema_tema where idMateria_id =' + str ( idMateria )
         tema = Tema.objects.raw ( query )
         return tema

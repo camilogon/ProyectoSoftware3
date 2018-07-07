@@ -1,7 +1,8 @@
 from django import forms
 from Apps.Cuestionario.models import Cuestionario
 from django.forms import ModelForm
-
+from Apps.Tema.models import Tema
+from Apps.Actividad.models import infoac
 
 class DateInput(forms.DateInput):
     input_type = 'date'
@@ -10,15 +11,14 @@ class DateInput(forms.DateInput):
 class CuestionarioForm(forms.ModelForm):
     class Meta:
         model = Cuestionario
-        fields = ['CodigoTema','Enunciado', 'Respuesta']
+        fields = ['Enunciado', 'Respuesta']
         labels = {
-            'CodigoTema': 'Codigo Tema',
             'Enunciado': 'Enunciado pregunta:',
             'Respuesta': 'Respuesta pregunta:'
         }
 
         widgets = {
-            'CodigoTema': forms.Select(attrs={'class': 'form-control'}) ,
-            'Enunciado': forms.TextInput(attrs={'class': 'form-control'}),
+            #'CodigoTema': forms.Select(attrs={'class': 'form-control'},choices=Tema.seleccionarTema(infoac.idMateria)) ,
+            'Enunciado': forms.TextInput(attrs={'class': 'form-control',"id":'hola'}),
             'Respuesta': forms.CheckboxInput(attrs={'class': 'form-control'}),
         }

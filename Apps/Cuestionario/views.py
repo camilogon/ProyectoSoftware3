@@ -19,15 +19,16 @@ def Index(request):
 def ListarMateria(request):
     dato = request.GET.get('id')
     infoac.datos=dato
-    print("llegue"+ dato)
+    #print("llegue"+ dato)
     dict= Materia.ListarMaterias(2751234,dato)
     resp = serializers.serialize("json", dict)
-    print(resp)
+    #print(resp)
     return JsonResponse(str(resp),safe=False)
 
 
 def ListarCuestionario(request,idMateria):
     infoac.idMateria = idMateria
+    print(infoac.datos)
     return render_to_response("Cuestionarios/ListarCuestionario.html", {"Cursos": Curso.Listarcursos(2751234),"Cuestionarios": Cuestionario.ListarCuestionarios(idMateria,infoac.datos),"Materia":idMateria ,"messages": messages.get_messages(request)})
 
 
@@ -38,12 +39,20 @@ def CrearCuestionario(request,idMateria):
         if form.is_valid():
             cuestionario=Cuestionario()
             cuestionario.Enunciado=request.POST['Enunciado']
-            Cuestionario.Respuesta=request.POST.get('Respuesta')
+            #print("soy el checkbox "+ str(request.POST.get('Respuesta')))
+            respuesta=request.POST.get('Respuesta')
+            if(respuesta=='on'):
+            #    print("entre al if")
+                cuestionario.Respuesta=1
+            #    print(Cuestionario.Respuesta)
+            else:
+                cuestionario.Respuesta =0
+            #   print ( cuestionario.Respuesta )
             cuestionario.idCurso= Curso(infoac.datos)
-            cuestionario.CodigoTema= Tema(request.POST['CodigoTema'])
+            cuestionario.CodigoTema= Tema(request.POST.get('CodigoTema'))
             cuestionario.save()
             messages.add_message(request, messages.SUCCESS, "guardada Cuestionario")
-            return HttpResponseRedirect("/Cuestionario/ListarCuestionario/"+str(idMateria),{"Actividades":Cuestionario.ListarCuestionarios(idMateria,infoac.datos) , "Materia": idMateria ,"Cursos": Curso.Listarcursos(2751234), "messages": messages.get_messages ( request )})
-    return render(request, 'Cuestionarios/CrearCuestionario.html', {'form': form})
+            return HttpResponseRedirect("/Cuestionario/ListarCuestionario/"+str(idMateria),{"Actividades":Cuestionario.ListarCuestionarios(infoac.idMateria,infoac.datos) , "Materia": idMateria ,"Cursos": Curso.Listarcursos(2751234), "messages": messages.get_messages ( request )})
+    return render(request, 'Cuestionarios/CrearCuestionario.html', {'form': form,"Temas":Tema.seleccionarTema(idMateria)},)
 
 

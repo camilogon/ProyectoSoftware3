@@ -37,6 +37,13 @@ function materiasCuestionario(idcurso, nombrecurso){
     });
 }
 /*
+function EnviarMaterias(){
+    var idTema=  $('#CodigoTema').val()
+    console.log("soy El tema "+ idTema)
+   $.post("/Cuestionario/Crear",{"CodigoTema":idTema},function (response) {
+    });
+}*/
+/*
 $(function () {
     /*$.post("/Actividad/ListarMateria",{"hola":"navas"},function (response) {
         console.log(response);
@@ -45,3 +52,4 @@ $(function () {
 
 });
 */
+
