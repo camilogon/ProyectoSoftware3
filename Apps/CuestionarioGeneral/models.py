@@ -15,7 +15,7 @@ class CuestionarioGeneral(models.Model):
 
 
     def ListarCuestionariosGeneral(idMateria,idCurso):
-        query='SELECT DISTINCT c.* FROM ((materia_materia m INNER JOIN tema_tema t on m.id = t.idMateria_id)INNER JOIN cuestionariogeneral_cuestionariogeneral c on t.Codigo =c.CodigoTema_id)INNER JOIN preguntascuestionario_preguntascuestionario pc on pc.CodigoCuestionarioGeneral_id=c.id where pc.idCurso_id ='+str(idCurso) + ' and m.id= ' +str(idMateria)
+        query='SELECT DISTINCT c.* FROM ((materia_materia m INNER JOIN tema_tema t on m.id = t.idMateria_id)INNER JOIN cuestionariogeneral_cuestionariogeneral c on t.Codigo =c.CodigoTema_id)INNER JOIN asignar_asignar a on a.idMateria_id= m.id where m.id ='+str(idCurso) + ' and m.id = ' +str(idMateria)
         Cuestionarios = CuestionarioGeneral.objects.raw ( query )
         return Cuestionarios
 

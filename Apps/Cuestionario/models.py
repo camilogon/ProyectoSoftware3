@@ -24,6 +24,6 @@ class Cuestionario(models.Model):
         return Cuestionarios
 
     def ListarCuestionariosResolver(idCuestionario):
-        query = 'SELECT DISTINCT c.* FROM cuestionario_cuestionario c INNER JOIN preguntascuestionario_preguntascuestionario pc on c.id=pc.CodigoCuestionario_id where pc.id= '+ str(idCuestionario)
+        query = 'SELECT DISTINCT c.* FROM cuestionario_cuestionario c INNER JOIN preguntascuestionario_preguntascuestionario pc on c.id=pc.CodigoCuestionario_id where pc.CodigoCuestionarioGeneral_id ='+ str(idCuestionario)
         Cuestionarios = Cuestionario.objects.raw ( query )
         return Cuestionarios
