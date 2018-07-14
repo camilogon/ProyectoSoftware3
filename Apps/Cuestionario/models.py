@@ -19,7 +19,7 @@ class Cuestionario(models.Model):
     Respuesta = models.BooleanField()
 
     def ListarCuestionarios(idMateira , idcurso):
-        query = 'SELECT DISTINCT c.* FROM (materia_materia m INNER JOIN tema_tema t on m.id = t.idMateria_id)INNER JOIN cuestionario_cuestionario c on t.Codigo = c.CodigoTema_id WHERE m.id ='+str(idMateira)+' and c.idCurso_id = '+str(idcurso)
+        query = 'SELECT DISTINCT c.* FROM ((materia_materia m INNER JOIN tema_tema t on m.id = t.idMateria_id)INNER JOIN cuestionario_cuestionario c on t.Codigo = c.CodigoTema_id )LEFT outer JOIN preguntascuestionario_preguntascuestionario pc on pc.CodigoCuestionario_id= c.id  WHERE m.id ='+str(idMateira)+' and pc.idCurso_id = '+str(idcurso)
         Cuestionarios = Cuestionario.objects.raw ( query )
         return Cuestionarios
 
