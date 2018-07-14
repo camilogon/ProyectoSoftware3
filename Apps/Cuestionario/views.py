@@ -48,7 +48,7 @@ def CrearCuestionario(request,idMateria):
             else:
                 cuestionario.Respuesta =0
             #   print ( cuestionario.Respuesta )
-            cuestionario.idCurso= Curso(infoac.datos)
+            #cuestionario.idCurso= Curso(infoac.datos)
             cuestionario.CodigoTema= Tema(request.POST.get('CodigoTema'))
             cuestionario.save()
             messages.add_message(request, messages.SUCCESS, "guardada Cuestionario")

@@ -15,8 +15,7 @@ def titulo_validation(value):
 class Cuestionario(models.Model):
     CodigoTema = models.ForeignKey(Tema, on_delete=models.CASCADE)
     idProfesor = models.ForeignKey(Profesor, on_delete=models.CASCADE,default=2751234)
-    idCurso = models.ForeignKey(Curso, on_delete=models.CASCADE)
-    Enunciado = models.CharField(max_length=30, unique=True, validators=[titulo_validation])
+    Enunciado = models.CharField(max_length=250, unique=True, validators=[titulo_validation])
     Respuesta = models.BooleanField()
 
     def ListarCuestionarios(idMateira , idcurso):
@@ -24,4 +23,7 @@ class Cuestionario(models.Model):
         Cuestionarios = Cuestionario.objects.raw ( query )
         return Cuestionarios
 
-    
+    def ListarCuestionariosResolver(idCuestionario):
+        query = 'SELECT DISTINCT c.* FROM cuestionario_cuestionario c INNER JOIN preguntascuestionario_preguntascuestionario pc on c.id=pc.CodigoCuestionario_id where pc.id= '+ str(idCuestionario)
+        Cuestionarios = Cuestionario.objects.raw ( query )
+        return Cuestionarios

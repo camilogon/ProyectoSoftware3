@@ -45,7 +45,9 @@ INSTALLED_APPS = [
     'Apps.Tema',
     'Apps.Asignar',
     'Apps.Actividad',
-    'Apps.Cuestionario'
+    'Apps.Cuestionario',
+    'Apps.CuestionarioGeneral',
+    'Apps.PreguntasCuestionario'
 ]
 
 MIDDLEWARE = [
