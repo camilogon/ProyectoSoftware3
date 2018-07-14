@@ -5,29 +5,25 @@
       <div class="panel panel-default">
           <div class="panel-heading"><h2>Preguntas cuestionario:  {{ NombreCues }}</h2></div>
           {% for preg in Preguntas %}
-
+              <table>
                  <div class="panel-body">
-                 <table>
                     <td>
                         <div>
-                           <h4>{{ preg.Enunciado }}  </h4>
+                           <h4>{{ preg.Enunciado }}</h4>
                         </div>
                     </td>
-                     <td></td>
                     <td>
-
-                            <form>
-                                  <label class="radio-inline">
-                                     <input type="radio" name="optradio">Verdadero
-                                  </label>
-                                  <label class="radio-inline">
-                                     <input type="radio" name="optradio"> Falso
-                                  </label>
-                            </form>
+                        <form method="post">
+                           <label class="radio-inline">
+                               <input type="radio" name="Si">Verdadero
+                           </label>
+                           <label class="radio-inline">
+                                <input type="radio" name="No"> Falso
+                           </label>
+                        </form>
                      </td>
-                 </table>
-                 </div>
-
+                    </div>
+                    </table>
           {% endfor %}
       </div>
      <button type="submit">Resolver</button>
