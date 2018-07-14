@@ -17,6 +17,8 @@ def IndexEstudiante(request):
     materias = Materia.ListarMateriasEstudiante ( 123456 )
     return render_to_response("indexEstudiante.html",{"Materias": materias, "messages": messages.get_messages(request)})
 
+"""Metodo que nos muestra en la interfaz los cuestionarios disponibles
+segun un id de materia que ingresa por paramentro"""
 def ListarCuestionarios(request,idMateria):
     cuestionarios=CuestionarioGeneral.ListarCuestionariosGeneral(idMateria,1)
     materias = Materia.ListarMateriasEstudiante ( 123456 )
