@@ -6,9 +6,9 @@ class CursoForm ( forms.ModelForm ):
     class Meta:
         model = Curso
         fields = ['Nombre' , 'Descripcion' , 'Codigo' , 'CantidadEstudiantes']
-        labels = {'Nombre': 'nombre del curso' ,
+        labels = {'Nombre': 'Nombre del curso' ,
                   'Descripcion': 'Descripcion' ,
-                  'Codigo': 'codigo' ,
+                  'Codigo': 'Codigo del curso' ,
                   'CantidadEstudiantes': 'Cantidad de estudiantes'
                   }
 

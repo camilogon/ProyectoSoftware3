@@ -7,7 +7,7 @@ class ProfesorForm(forms.ModelForm):
 		fields= ['Cedula','Nombre','Apellido','Ciudad','Correo','Telefono',]
 		labels={'Cedula':'Cedula del Profesor',
 				'Nombre': 'Nombre del Profesor',
-		        'Apellido':'apellido Profesor',
+		        'Apellido':'Apellido del Profesor',
 		        'Ciudad':'Ciudad',
 				'Correo':'Correo',
 				'Telefono':'Telefono',}

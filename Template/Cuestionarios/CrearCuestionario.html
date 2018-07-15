@@ -2,7 +2,7 @@
 {% block tabla%}
     <h2>Crear Reto</h2>
   <form action="" method="post" enctype="multipart/form-data">
-      <h4>Codigo Tema:</h4>
+      <h4>Nombre del Tema:</h4>
       {% for tema in Temas %}
          <select class="form-control" id="CodigoTema" name="CodigoTema">
            <option value="{{ tema.Codigo }}"  >{{ tema.Nombre }}</option>

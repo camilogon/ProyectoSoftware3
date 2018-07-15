@@ -13,10 +13,10 @@ class EstudianteForm ( ModelForm ):
         model = Estudiante
         fields = ['CodigoEstudiante' , 'Nombre' , 'Apellido' ,'Curso', 'FechaNacimieto']
         labels = {'CodigoEstudiante': 'Codigo del estudiante' ,
-                  'Nombre': 'Nombre' ,
-                  'Apellido':'Apellido',
-                  'Curso' : 'Seleccione curso' ,
-                  'FechaNacimieto': 'FechaNacimiento' ,
+                  'Nombre': 'Nombre del estudiante' ,
+                  'Apellido':'Apellido del estudiante',
+                  'Curso' : 'Seleccione el curso del estudiante' ,
+                  'FechaNacimieto': 'FechaNacimiento del estudiante' ,
                   }
 
         widgets = {'CodigoEstudiante': forms.TextInput ( attrs={'class': 'form-control'} ) ,

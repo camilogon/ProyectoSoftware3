@@ -15,10 +15,10 @@ class ActividadForm(forms.ModelForm):
         fields = ['Nombre', 'Descripcion','docfile', 'Fecha_Entrega']
         labels = {
             'Nombre': 'Titulo Actividad:',
-            'Descripcion': 'Descripción Actividad:',
+            'Descripcion': 'Descripción de la Actividad:',
             #'idTema': 'Tema:',
             'docfile': 'Archivo:',
-            'Fecha_Entrega': 'Fecha Entrega:',
+            'Fecha_Entrega': 'Fecha de Entrega:',
         }
 
         widgets = {

@@ -6,7 +6,7 @@ class TemaForm ( forms.ModelForm ):
     class Meta:
         model = Tema
         fields = ['Codigo' , 'Nombre' , 'Descripcion' , 'idMateria']
-        labels = {'Codigo': 'Codigo del Tema' ,
+        labels = {'Codigo': 'Escoja el Tema' ,
                   'Nombre': 'Nombre' ,
                   'Descripcion': 'Descripcion' ,
                   'idMateria': 'Escoja la materia' ,

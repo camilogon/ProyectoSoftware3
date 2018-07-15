@@ -9,8 +9,8 @@ class AsignarForm ( forms.ModelForm ):
         model = Asignar
         fields = ['cedula' , 'idMateria' , 'idCurso']
         labels = {'cedula': 'cedula del acudiente' ,
-                  'idMateria': 'nombre' ,
-                  'idCurso': 'apellido' ,
+                  'idMateria': 'Codigo de la Materia' ,
+                  'idCurso': 'Codigo del curso' ,
                   }
 
         widgets = {'cedula': forms.Select (attrs={'class': 'form-control'} ) ,

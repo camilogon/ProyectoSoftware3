@@ -13,8 +13,8 @@ class CuestionarioForm(forms.ModelForm):
         model = Cuestionario
         fields = ['Enunciado', 'Respuesta']
         labels = {
-            'Enunciado': 'Enunciado pregunta:',
-            'Respuesta': 'Respuesta pregunta:'
+            'Enunciado': 'Enunciado de la pregunta:',
+            'Respuesta': 'Respuesta a la pregunta:'
         }
 
         widgets = {

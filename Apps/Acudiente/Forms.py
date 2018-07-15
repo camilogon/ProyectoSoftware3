@@ -6,7 +6,7 @@ class AcudienteForm(forms.ModelForm):
 		model= Acudiente
 		fields= ['cedula','nombre','apellido','direccion','celular','cantidadHijos','correo']
 		labels={'cedula':'cedula del acudiente',
-				'nombre':'nombre',
+				'nombre':'Nombre del acudiente',
 				'apellido':'apellido',
 				'direccion':'direccion',
 				'celular':'celular',
